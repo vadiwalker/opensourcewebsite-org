@@ -1067,7 +1067,7 @@ class SAdOfferController extends Controller
         if (($message = $this->getUpdate()->getMessage()) && $this->getUpdate()->getMessage()->getPhoto()) {
             $photoFileId = $message->getPhoto()[0]->getFileId();
 
-            $this->getState()->setIntermdeiateField('adOfferPhotoFileId', $photoFileId);
+            $this->getState()->setIntermediateField('adOfferPhotoFileId', $photoFileId);
         }
 
         return $this->actionPhoto($page);
